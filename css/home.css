@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(226, 223, 223);
+    font-family: sans-serif;
+    /* width: 100vw; */
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+.nav_bar{
+    background-color: #fff;
+    /* width: 100vw; */
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_bar ul{
+    display: flex;
+    gap: 20px;
+}
+.nav_bar ul li a{
+        color: #000;
+}
+.hero_section{
+    background: url(../img/nike-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    /* width: 100%; */
+}
+
+/* Features section */
+.features_section{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.features-text h1{
+    padding-bottom: 40px;
+}
+.features-text h2{
+    padding-bottom: 20px;
+}
+.features-text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.features-flex{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     text-align: center;
+     position: relative;
+}
+.features-flex .btns{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 40px;
+    gap: 10px;
+
+}
+button{
+    padding: 10px 50px;
+    border: 1px transparent;
+    cursor: pointer;   
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+  color: #fff;
+  background-color: #000000d8;  
+}
+
+/* .features img{
+    width: 30%;
+    gap: 50px;
+} */
+.a{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/img-1.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 8000px;
+}
+.b{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/img-2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 8000px;
+}
+.c{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/img-3.avif);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 8000px;
+}
+
+/* Half time section */
+.h-time{
+    background-image: url(../img/img-4.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+.h-time h2{
+    font-size: 2.5rem;
+    padding: 15px 0;
+}
+.h-time p{
+    font-size: 1.2rem;
+    padding: 15px 0;
+}
+
+/* focused grid section */
+.grid-section{
+    margin: 20px 0;
+}
+/* .d{
+    background-image: url(../img/img-5.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.e{
+    background-image: url(../img/img-6.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.f{
+    background-image: url(../img/img-7.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.g{
+    background-image: url(../img/img-8.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.h{
+    background-image: url(../img/img-9.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+} */
+ .grid{
+    margin: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2fr, 4);
+ }
