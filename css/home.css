@@ -29,6 +29,7 @@ body{
     align-items: center;
     justify-content: space-between;
     border-bottom: #000 1px solid;
+    z-index: 100;
 }
 .nav_bar ul{
     display: flex;
@@ -37,6 +38,18 @@ body{
 .nav_bar ul li a{
         color: #000;
 }
+
+.dot{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    margin-top: -.3%;
+    margin-left: .8%;
+    display: none;
+    border-radius: 100%;
+    background: red;
+}
+
 .hero{
     margin-top: 40px;
     padding: 60px;
@@ -342,7 +355,6 @@ input::placeholder{
      box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
-<<<<<<< HEAD
 
 .grid-item {
     border: 1px solid #eee;
@@ -414,7 +426,6 @@ input::placeholder{
     opacity: 1;
     visibility: visible;
 }
-=======
 /* more shoes section */
 .more-section{
     margin: 0 20px;
@@ -505,4 +516,58 @@ footer{
 .footer-end i{
     padding: 10px;
 }
->>>>>>> 6fb9c1dfb7eee61068134d8009e4212124b304b5
+
+
+.cart {
+    height: 100vh;
+    top: 7%;
+    transition: var(--transition);
+    z-index: 90;
+    position: fixed;
+    display: block;
+    width: 0%;
+    border-left: 1px solid black;
+    right: 0%;
+    background: #fff;
+}
+
+.inner-cart {
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    
+
+}
+
+.cart-items {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    height: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: #000;
+    
+}
+
+.cart-item-list {
+    background: #f8f8f8;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 4;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+.cart-item-details {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+}

@@ -7,35 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/reset.css" />
     <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
       href="/css/home.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <nav class="nav_bar">
-      <img src="#" alt="Logo" />
+      />
+    </head>
+    <body>
+      <nav class="nav_bar">
+        <img src="#" alt="Logo" />
+        
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Socks</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Store</a></li>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+          <div>
+            <div class="dot"></div>
+            <a href="#"><i class="fa-solid fa-cart-shopping" onclick="opener(event)"></i></a>
+          </div>
+        </ul>
+      </nav>
+      
+      
+                <!-- Cart -->
+        
+        
+                  <div class="cart" id="cart">
+                   
+                    <div class="inner-cart">
+                      
+                      <p style="font-size: 40px; color: red; cursor: pointer;" id="x">x</p>
 
-      <ul>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Socks</a></li>
-        <li><a href="#">New Arrivals</a></li>
-        <li><a href="#">Store</a></li>
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#"><i class="fa-regular fa-user"></i></a>
-        <a href="#"><i class="fa-solid fa-circle-question"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-      </ul>
-    </nav>
+                      <div class="cart-items"></div>
 
-    <!-- Hero section -->
+                    </div>
+                    
+                  </div>
+      <!-- Hero section -->
     <section class="hero-section">
       fsud;bu;
       <div class="hero">
@@ -128,7 +145,7 @@
             <img src="img/img-6.avif" alt="Golf Dasher shoe" />
             <div class="overlay">
               <div class="overlay-content">
-                <a href="#" class="view-product-button">Buy now!</a>
+                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
               </div>
             </div>
           </div>
@@ -145,7 +162,7 @@
             <img src="img/img-9.avif" alt="Golf Dasher shoe" />
             <div class="overlay">
               <div class="overlay-content">
-                <a href="#" class="view-product-button">Buy now!</a>
+                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
               </div>
             </div>
           </div>
@@ -162,7 +179,7 @@
             <img src="img/img-7.avif" alt="Golf Dasher shoe" />
             <div class="overlay">
               <div class="overlay-content">
-                <a href="#" class="view-product-button">Buy now!</a>
+                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
               </div>
             </div>
           </div>
@@ -179,7 +196,7 @@
             <img src="img/img-8.avif" alt="Golf Dasher shoe" />
             <div class="overlay">
               <div class="overlay-content">
-                <a href="#" class="view-product-button">Buy now!</a>
+                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
               </div>
             </div>
           </div>
@@ -203,7 +220,7 @@
               </div>
               <p>Note: You can opt-out at any time. See our <a href="#">Privacy Policy</a> and <a href="#">Terms.</a> </p>
             </div>
-        </section>
+          </section>
 
         <!-- more items section -->
          <section class="more-section">
@@ -254,6 +271,13 @@
                         $145
                     </div>
                 </div>
+
+
+
+
+
+
+
 
               <!--   <div class="grid-class h">
                     <img src="/img/img-15.avif" alt="">
@@ -393,4 +417,7 @@
             </div>
            </footer>
 </body>
+
+<script src="./js/index.js"></script>
+
 </html>
