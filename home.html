@@ -1,209 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link
-    rel="stylesheet"
-    type="text/css"
-    media="screen"
-      href="/css/home.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      />
-    </head>
-    <body>
-      <nav class="nav_bar">
-        <img src="#" alt="Logo" />
-        
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/home.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <nav class="nav_bar">
+        <img src="#" alt="Logo">
+
         <ul>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Socks</a></li>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Store</a></li>
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="#"><i class="fa-regular fa-user"></i></a>
-          <a href="#"><i class="fa-solid fa-circle-question"></i></a>
-          <div>
-            <div class="dot"></div>
-            <a href="#"><i class="fa-solid fa-cart-shopping" onclick="opener(event)"></i></a>
-          </div>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Socks</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Store</a></li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a>
         </ul>
-      </nav>
-      
-      
-                <!-- Cart -->
-        
-        
-                  <div class="cart" id="cart">
-                   
-                    <div class="inner-cart">
-                      
-                      <p style="font-size: 40px; color: red; cursor: pointer;" id="x">x</p>
+    </nav>
 
-                      <div class="cart-items"></div>
+    <!-- Hero section -->
+     <section class="hero-section">fsud;bu;
+        <div class="hero">
+            <h1>Welcome To The Home Of Luxirious Footwears With All Models, Size and Customized Features.</h1>
+                    <div class="hero-end">
+                <p>Click here to get yours now</p>
+                <div class="btns">
+                    <button onclick="addToCart()">Shop Men</button>
+                    <button onclick="addToCart()">Shop Women</button>
+                </div>
+            </div>
+        </div>
 
+     </section>
+
+     <!-- feature section -->
+      <section class="features-section">
+        <h1>Featured Products</h1>
+        <div class="features">
+            <div class="features-text features-flex a">
+              <div class="features-main-text">
+                  <h2>Best Sellers</h2>
+                <p>Fan-Favorite Sneakers, Flats, and Slip-Ons</p>
+              </div>
+                <div class="btns">
+                    <button>Shop Men</button>
+                    <button>Shop Women</button>
+                </div>
+            </div>
+            <div class="features-text features-flex b">
+                <div class="features-main-text">
+                <h2>New Arrivals</h2>
+                <p>The Latest Styles & Limited-Edition Colors</p>
+                </div>
+             
+                <div class="btns">
+                    <button>Shop Men</button>
+                    <button>Shop Women</button>
+                </div>
+            </div>
+            <div class="features-text features-flex c">
+                <div class="features-main-text">
+                <h2>Summer Essentials</h2>
+                <p>Breezy Shoes For Warmer Days</p>
+                </div>
+                
+                <div class="btns">
+                    <button>Shop Men</button>
+                    <button>Shop Women</button>
+                </div>
+            </div>
+        
+        </div>
+      </section>
+
+      <!-- Half time section -->
+       <section class="h-time-section">
+        <div class="h-time">
+            <h2>We Make Better Things In A Better Way</h2>
+            <div class="h-time-p">
+                <p>By looking to the world’s greatest innovator—Nature—we create shoes that deliver <br> unrivaled comfort that you feel good in and feel good about.</p>
+            </div>
+            <div class="h-time-logo">
+                <img src="#" alt="logo">
+            </div>
+        </div>
+       </section>
+
+       <!-- focused grid section -->
+        <section class="grid-section">
+            <div class="grid">
+                <div class="grid-class-ish d">
+                    <div class="grid-text-ish">
+                    <h1>Father's Day Finds</h1>                    
+                    <p>Shop styles he'll love</p>
                     </div>
-                    
-                  </div>
-      <!-- Hero section -->
-    <section class="hero-section">
-      fsud;bu;
-      <div class="hero">
-        <h1>
-          Welcome To The Home Of Luxirious Footwears With All Models, Size and
-          Customized Features.
-        </h1>
-        <div class="hero-end">
-          <p>Click here to get yours now</p>
-          <div class="btns">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- feature section -->
-    <section class="features-section">
-      <h1>Featured Products</h1>
-      <div class="features">
-        <div class="features-text features-flex a">
-          <div class="features-main-text">
-            <h2>Best Sellers</h2>
-            <p>Fan-Favorite Sneakers, Flats, and Slip-Ons</p>
-          </div>
-          <div class="btns">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-        <div class="features-text features-flex b">
-          <div class="features-main-text">
-            <h2>New Arrivals</h2>
-            <p>The Latest Styles & Limited-Edition Colors</p>
-          </div>
-          <div class="btns">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-        <div class="features-text features-flex c">
-          <div class="features-main-text">
-            <h2>Summer Essentials</h2>
-            <p>Breezy Shoes For Warmer Days</p>
-          </div>
+                    <div class="btns">
+                        <button>Gifts For Him</button>                  
+                        <button>Gift Cards</button>   
+                    </div>               
+                </div>
 
-          <div class="btns">
-            <button>Shop Men</button>
-            <button>Shop Women</button>
-          </div>
-        </div>
-      </div>
-    </section>
+                <div class="grid-class e">
+                     <button onclick="addToCart()">Add to Cart</button>
+                    <img src="/img/img-6.avif" alt="">
+                      <div class="grid-text">
+                        <div class="grid-first-text">
+                            <h4>Golf Dasher</h4>
+                            <p>Natural Black</p>
+                        </div>
+                        $145
+                    </div>
+                </div>
 
-    <!-- Half time section -->
-    <section class="h-time-section">
-      <div class="h-time">
-        <h2>We Make Better Things In A Better Way</h2>
-        <div class="h-time-p">
-          <p>
-            By looking to the world’s greatest innovator—Nature—we create shoes
-            that deliver <br />
-            unrivaled comfort that you feel good in and feel good about.
-          </p>
-        </div>
-        <div class="h-time-logo">
-          <img src="#" alt="logo" />
-        </div>
-      </div>
-    </section>
+                <div class="grid-class f">
+                     <button onclick="addToCart()">Add to Cart</button>
+                    <img src="/img/img-7.avif" alt="">
+                       <div class="grid-text">
+                        <div class="grid-first-text">
+                            <h4>Tree Dasher 2</h4>
+                            <p>Blizzard/Hazy Cobalt</p>
+                        </div>
+                        $135
+                    </div>
+                </div>
 
-    <!-- focused grid section -->
-    <section class="grid-section">
-      <div class="grid">
-        <div class="grid-class-ish d">
-          <div class="grid-text-ish">
-            <h1>Father's Day Finds</h1>
-            <p>Shop styles he'll love</p>
-          </div>
+                <div class="grid-class g">
+                     <button onclick="addToCart()">Add to Cart</button>
+                    <img src="/img/img-8.avif" alt="">
+                       <div class="grid-text">
+                        <div class="grid-first-text">
+                            <h4>Tree Dasher 2</h4>
+                            <p>Medium Grey</p>
+                        </div>
+                        $145
+                    </div>
+                </div>
 
-          <div class="btns">
-            <button>Gifts For Him</button>
-            <button>Gift Cards</button>
-          </div>
-        </div>
-
-        <div class="grid-item">
-          <div class="grid-image-container">
-            <img src="img/img-6.avif" alt="Golf Dasher shoe" />
-            <div class="overlay">
-              <div class="overlay-content">
-                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-text">
-            <div class="grid-first-text">
-              <h4>Golf Dasher</h4>
-              <p>Natural Black</p>
-            </div>
-            $145
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-image-container">
-            <img src="img/img-9.avif" alt="Golf Dasher shoe" />
-            <div class="overlay">
-              <div class="overlay-content">
-                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-text">
-            <div class="grid-first-text">
-              <h4>Golf Dasher</h4>
-              <p>Natural Black</p>
-            </div>
-            $145
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-image-container">
-            <img src="img/img-7.avif" alt="Golf Dasher shoe" />
-            <div class="overlay">
-              <div class="overlay-content">
-                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-text">
-            <div class="grid-first-text">
-              <h4>Golf Dasher</h4>
-              <p>Natural Black</p>
-            </div>
-            $145
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-image-container">
-            <img src="img/img-8.avif" alt="Golf Dasher shoe" />
-            <div class="overlay">
-              <div class="overlay-content">
-                <a href="#" class="view-product-button" onclick="add(event)">Buy now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-text">
-            <div class="grid-first-text">
-              <h4>Golf Dasher</h4>
-              <p>Natural Black</p>
+                <div class="grid-class h">
+                     <button onclick="addToCart()">Add to Cart</button>
+                    <img src="/img/img-9.avif" alt="">
+                    <div class="grid-text">
+                        <div class="grid-first-text">
+                            <h4>Golf Dasher</h4>
+                            <p>Blizzard/Hazy Cobalt</p>
+                        </div>
+                        $145
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -220,7 +175,7 @@
               </div>
               <p>Note: You can opt-out at any time. See our <a href="#">Privacy Policy</a> and <a href="#">Terms.</a> </p>
             </div>
-          </section>
+        </section>
 
         <!-- more items section -->
          <section class="more-section">
@@ -229,6 +184,7 @@
                 <div class="more-shoes">
 
                  <div class="more-class i">
+                      <button onclick="addToCart()">Add to Cart</button>
                     <img src="/img/img-11.avif" alt="">
                     <div class="grid-text">
                         <div class="grid-first-text">
@@ -240,6 +196,7 @@
                 </div>
 
                  <div class="more-class j">
+                      <button onclick="addToCart()">Add to Cart</button>
                     <img src="/img/img-12.avif" alt="">
                     <div class="grid-text">
                         <div class="grid-first-text">
@@ -251,6 +208,7 @@
                 </div>
 
                  <div class="more-class k">
+                      <button onclick="addToCart()">Add to Cart</button>
                     <img src="/img/img-13.avif" alt="">
                     <div class="grid-text">
                         <div class="grid-first-text">
@@ -262,6 +220,7 @@
                 </div>
 
                  <div class="more-class l">
+                      <button onclick="addToCart()">Add to Cart</button>
                     <img src="/img/img-14.avif" alt="">
                     <div class="grid-text">
                         <div class="grid-first-text">
@@ -271,13 +230,6 @@
                         $145
                     </div>
                 </div>
-
-
-
-
-
-
-
 
               <!--   <div class="grid-class h">
                     <img src="/img/img-15.avif" alt="">
@@ -412,12 +364,9 @@
                     <i class="fa-brands fa-pinterest"></i>
                 </div>
             </div>
-            <div>
+            <div class="footer-lastline">
                 <p>© 2025 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility <br> Do Not Sell My Personal Information</p>
             </div>
            </footer>
 </body>
-
-<script src="./js/index.js"></script>
-
 </html>
